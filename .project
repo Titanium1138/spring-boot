@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>complete</name>
-	<comment>Project complete created by Buildship.</comment>
+	<name>spring-boot-sample-batch-application</name>
+	<comment>Project spring-boot created by Buildship.</comment>
 	<projects>
 	</projects>
 	<buildSpec>
@@ -22,7 +22,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1599663324088</id>
+			<id>0</id>
 			<name></name>
 			<type>30</type>
 			<matcher>

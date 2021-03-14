@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.134.1/containers/ubuntu
 {
-	"name": "spring-boot",
+	"name": "spring-boot-sample-batch-application",
 	"build": {
 		"dockerfile": "Dockerfile",
 		// Update 'VARIANT' to pick an Ubuntu version: focal, bionic
@@ -16,13 +16,13 @@
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
 		"vscjava.vscode-java-pack",
-		"pivotal.vscode-boot-dev-pack"
+		"pivotal.vscode-boot-dev-pack",
+		"gabrielbb.vscode-lombok",
+		"richardwillis.vscode-gradle-extension-pack"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [
-		8080,
-	],
+	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "uname -a",

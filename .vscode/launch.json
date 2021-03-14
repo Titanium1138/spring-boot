@@ -2,12 +2,12 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Spring Boot-Application<spring-boot>",
+            "name": "Spring Boot Application(spring-boot-sample-batch-application)",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",
-            "mainClass": "hello.Application",
-            "projectName": "spring-boot",
+            "mainClass": "titanium1138.sample.SampleApplication",
+            "projectName": "spring-boot-sample-batch-application",
             "args": ""
         }
     ]

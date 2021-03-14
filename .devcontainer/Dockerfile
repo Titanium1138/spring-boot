@@ -26,8 +26,8 @@ RUN export DEBIAN_FRONTEND=noninteractive \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/* /tmp/library-scripts
 
-ENV GRADLE_VERSION 6.6.1
-ARG GRADLE_DOWNLOAD_SHA256=7873ed5287f47ca03549ab8dcb6dc877ac7f0e3d7b1eb12685161d10080910ac
+ENV GRADLE_VERSION 6.8.3
+ARG GRADLE_DOWNLOAD_SHA256=7faa7198769f872826c8ef4f1450f839ec27f0b4d5d1e51bade63667cbccd205
 ENV GRADLE_HOME /opt/gradle
 RUN set -o errexit -o nounset \
     && echo "Downloading Gradle" \
@@ -41,13 +41,3 @@ RUN set -o errexit -o nounset \
     && ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle \
     && echo "Testing Gradle installation" \
     && gradle --version
-
-# RUN git clone https://github.com/spring-guides/gs-spring-boot-docker.git gs-spring-boot-docker \
-#     && cd gs-spring-boot-docker/initial \
-#     && ./gradlew build
-
-# RUN cp gs-spring-boot-docker/initial/build/libs/gs-spring-boot-docker-0.1.0.jar /app.jar
-
-# WORKDIR / 
-# EXPOSE 8080
-# ENTRYPOINT ["java","-jar","/app.jar"]
